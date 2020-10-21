@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
                 alert.setPositiveButton("YES", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        startActivity(new Intent(MainActivity.this,RegistrationActivity.class));
+                        startActivity(new Intent(getApplicationContext(),RegistrationActivity.class));
                     }
                 });
                 alert.create().show();
